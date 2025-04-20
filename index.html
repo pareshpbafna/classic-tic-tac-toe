@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-overlay" id="welcomeOverlay">
+        <div class="welcome-container">
+            <h2>Welcome to Tic Tac Toe!</h2>
+            <div class="player-inputs">
+                <div class="input-group">
+                    <label for="player1">Player X Name</label>
+                    <input type="text" id="player1" placeholder="Player X">
+                </div>
+                <div class="input-group">
+                    <label for="player2">Player O Name</label>
+                    <input type="text" id="player2" placeholder="Player O">
+                </div>
+            </div>
+            <button id="startGameBtn" class="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="status" class="status"></div>
+        <div class="score-board">
+            <div class="score-card">
+                <div class="player-name" id="player1Label"></div>
+                <div class="player-symbol" id="player1Symbol">X</div>
+                <div class="score" id="player1Score">0</div>
+            </div>
+            <div class="score-divider">vs</div>
+            <div class="score-card">
+                <div class="player-name" id="player2Label"></div>
+                <div class="player-symbol" id="player2Symbol">O</div>
+                <div class="score" id="player2Score">0</div>
+            </div>
+        </div>
+        <div class="game-board">
+            <div id="victory-line"></div>
+            <button class="cell" data-cell></button>
+            <button class="cell" data-cell></button>
+            <button class="cell" data-cell></button>
+            <button class="cell" data-cell></button>
+            <button class="cell" data-cell></button>
+            <button class="cell" data-cell></button>
+            <button class="cell" data-cell></button>
+            <button class="cell" data-cell></button>
+            <button class="cell" data-cell></button>
+        </div>
+        <button id="restartButton">Replay</button>
+    </div>
+
+    <audio id="xSound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+    <audio id="oSound" src="https://assets.mixkit.co/active_storage/sfx/2572/2572-preview.mp3"></audio>
+    <audio id="victorySound" src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
